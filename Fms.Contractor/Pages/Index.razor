@@ -1,0 +1,42 @@
+﻿@using Syncfusion.Blazor.Layouts
+@page "/"
+
+<div class="content-wrapper" style="max-width: 100%">
+<SfDashboardLayout @ref="_dashboard" CellSpacing="@_cellSpacing" Columns="@Columns">
+	<DashboardLayoutPanels>
+		@foreach (PanelObject panel in PanelData)
+		{
+			<DashboardLayoutPanel @key="panel" Row=@panel.Row Column=@panel.Column SizeX=@panel.SizeX SizeY=@panel.SizeY>
+				<HeaderTemplate>
+					<div class="e-header-text">Header Area</div>
+					<div class="header-border"></div>
+				</HeaderTemplate>
+				<ContentTemplate>
+					<div class="panel-content">Content Area</div>
+				</ContentTemplate>
+			</DashboardLayoutPanel>
+		}
+	</DashboardLayoutPanels>
+</SfDashboardLayout>
+</div>
+@code
+{
+    SfDashboardLayout _dashboard;
+    private double[] _cellSpacing = { 10, 10 };
+    public int Columns = 6;
+    
+    List<PanelObject> PanelData { get; set; } = new List<PanelObject>()
+    {
+        new PanelObject(){ Column=0, Row=0, SizeX=4, SizeY=3 },
+        new PanelObject(){ Column=4, Row=0, SizeX=2, SizeY=3 },
+        new PanelObject(){ Column=0, Row=3, SizeX=6, SizeY=2 }
+    };
+    public class PanelObject
+    {
+        public int Column { get; set; }
+        public int Row { get; set; }
+        public int SizeX { get; set; }
+        public int SizeY { get; set; }
+    }
+    
+}

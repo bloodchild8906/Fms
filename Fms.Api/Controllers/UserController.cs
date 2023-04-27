@@ -2,15 +2,15 @@
 using System.Threading.Tasks;
 using Ardalis.Result;
 using Ardalis.Result.AspNetCore;
-using Fsm.Application.Common.Responses;
-using Fsm.Application.Features.Auth.Authenticate;
-using Fsm.Application.Features.Users;
-using Fsm.Application.Features.Users.CreateUser;
-using Fsm.Application.Features.Users.DeleteUser;
-using Fsm.Application.Features.Users.GetUserById;
-using Fsm.Application.Features.Users.GetUsers;
-using Fsm.Application.Features.Users.UpdatePassword;
-using Fsm.Domain.Auth;
+using Fms.Application.Core.Common.Responses;
+using Fms.Application.Core.Features.Auth.Authenticate;
+using Fms.Application.Core.Features.Users;
+using Fms.Application.Core.Features.Users.CreateUser;
+using Fms.Application.Core.Features.Users.DeleteUser;
+using Fms.Application.Core.Features.Users.GetUserById;
+using Fms.Application.Core.Features.Users.GetUsers;
+using Fms.Application.Core.Features.Users.UpdatePassword;
+using Fms.Domain.DbEntity.Auth;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -23,10 +23,10 @@ namespace Fms.Api.Controllers;
 [Authorize]
 public class UserController : ControllerBase
 {
-    private readonly Fsm.Domain.Auth.Interfaces.ISession _session;
+    private readonly Fms.Domain.DbEntity.Auth.Interfaces.ISession _session;
     private readonly IMediator _mediator;
 
-    public UserController(Fsm.Domain.Auth.Interfaces.ISession session, IMediator mediator)
+    public UserController(Fms.Domain.DbEntity.Auth.Interfaces.ISession session, IMediator mediator)
     {
         _session = session;
         _mediator = mediator;

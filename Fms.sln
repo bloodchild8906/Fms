@@ -12,13 +12,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PersistanceLayer", "Persist
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fms.Api", "Fms.Api\Fms.Api.csproj", "{E1DB42FD-E6C9-44A6-BEF8-6DEFA333C017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fsm.Domain", "Fsm.Domain\Fsm.Domain.csproj", "{1A0A7E24-5476-47C1-B123-523327334F1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fms.Domain.DbEntity", "Fms.Domain.DbEntity\Fms.Domain.DbEntity.csproj", "{1A0A7E24-5476-47C1-B123-523327334F1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fsm.Application", "Fsm.Application\Fsm.Application.csproj", "{2B9D1602-AB8F-4A8E-8038-432D2BEDCCFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fms.Application.Core", "Fms.Application.Core\Fms.Application.Core.csproj", "{2B9D1602-AB8F-4A8E-8038-432D2BEDCCFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fsm.Infrastructure", "Fsm.Infrastructure\Fsm.Infrastructure.csproj", "{6A2EB7B3-5263-4587-AB36-7AF394E3D73F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fms.Persistance.Infrastructure", "Fms.Persistance.Infrastructure\Fms.Persistance.Infrastructure.csproj", "{6A2EB7B3-5263-4587-AB36-7AF394E3D73F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{B54D1911-8315-42CF-BAD1-EF641006F03F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{440DE9DC-1FD5-4C65-8231-2B9EFD483FCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

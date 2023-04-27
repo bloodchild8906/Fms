@@ -1,4 +1,4 @@
-﻿using Fsm.Application.Common.Behaviors;
+﻿using Fms.Application.Core.Common.Behaviors;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Fms.Api.Configurations;
@@ -9,7 +9,7 @@ public static class MediatRSetup
     {
         services.AddMediatR((config) =>
         {
-            config.RegisterServicesFromAssemblyContaining(typeof(Fsm.Application.IAssemblyMarker));
+            config.RegisterServicesFromAssemblyContaining(typeof(Fms.Application.Core.IAssemblyMarker));
             config.AddOpenBehavior(typeof(ValidationResultPipelineBehavior<,>));
         });
         

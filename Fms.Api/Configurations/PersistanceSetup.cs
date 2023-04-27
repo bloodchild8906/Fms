@@ -1,6 +1,6 @@
-﻿using Fsm.Application.Auth;
-using Fsm.Domain.Auth.Interfaces;
-using Fsm.Infrastructure.Context;
+﻿using Fms.Application.Core.Auth;
+using Fms.Domain.DbEntity.Auth.Interfaces;
+using Fms.Persistance.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

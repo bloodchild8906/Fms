@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Fsm.Application.Common;
+using Fms.Application.Core.Common;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;

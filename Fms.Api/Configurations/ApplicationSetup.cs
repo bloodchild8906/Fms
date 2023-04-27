@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Fsm.Application.Common;
-using Fsm.Application.MappingConfig;
-using Fsm.Infrastructure.Context;
+using Fms.Application.Core.Common;
+using Fms.Application.Core.MappingConfig;
+using Fms.Persistance.Infrastructure.Context;
 using Mapster;
 using MassTransit;
 using MassTransit.NewIdProviders;

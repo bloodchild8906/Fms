@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using Fsm.Application.Common;
+using Fms.Application.Core.Common;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

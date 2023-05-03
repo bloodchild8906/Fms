@@ -1,9 +1,8 @@
 ﻿using System;
+using Ardalis.Result;
+using MediatR;
+using Microsoft.AspNetCore.Http;
 
 namespace Fms.Application.Core.Features.Auth.Authenticate;
 
-public record Jwt
-{
-    public string Token { get; init; } = null!;
-    public DateTime ExpDate { get; init; }
-}
+public sealed record Jwt(string Token, DateTime ExpDate);

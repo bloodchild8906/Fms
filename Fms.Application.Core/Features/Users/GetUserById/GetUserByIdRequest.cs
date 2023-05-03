@@ -4,4 +4,4 @@ using MediatR;
 
 namespace Fms.Application.Core.Features.Users.GetUserById;
 
-public record GetUserByIdRequest(Guid Id) : IRequest<Result<GetUserResponse>>;
+public sealed record GetUserByIdRequest(Guid Id) : IRequest<Result<GetUserResponse>>;

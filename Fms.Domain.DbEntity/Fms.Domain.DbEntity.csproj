@@ -4,6 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <LangVersion>11</LangVersion>
     <Nullable>enable</Nullable>
+    <Title>Fms Domain DbEntity</Title>
+    <Description>The package that holds the entities for the fufillment management system it does not have any logic</Description>
   </PropertyGroup>
 
   <ItemGroup>

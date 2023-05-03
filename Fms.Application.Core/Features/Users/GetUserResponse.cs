@@ -1,12 +1,6 @@
 ﻿using System;
+using Fms.Domain.DbEntity.Entities;
 
 namespace Fms.Application.Core.Features.Users;
 
-public record GetUserResponse
-{
-    public Guid Id { get; init; }
-
-    public string Username { get; init; } = null!;
-
-    public bool IsAdmin { get; init; }
-}
+public record GetUserResponse(Guid Id,string Username,Role RoleDetail );

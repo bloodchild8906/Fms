@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fms.Contractor", "Fms.Contractor\Fms.Contractor.csproj", "{6BA30F9D-1C47-49C2-BB02-8193E2008197}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fms.Contractor", "Fms.Contractor\Fms.Contractor.csproj", "{6BA30F9D-1C47-49C2-BB02-8193E2008197}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integrations", "Integrations", "{7DE76D28-38EA-4E74-8426-8A915A63CE2B}"
 EndProject
@@ -10,17 +13,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainLayer", "DomainLayer"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PersistanceLayer", "PersistanceLayer", "{A73BEF42-D660-4727-A414-2BF012E1FADB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fms.Api", "Fms.Api\Fms.Api.csproj", "{E1DB42FD-E6C9-44A6-BEF8-6DEFA333C017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fms.Integrations.Api", "Fms.Integrations.Api\Fms.Integrations.Api.csproj", "{E1DB42FD-E6C9-44A6-BEF8-6DEFA333C017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fms.Domain.DbEntity", "Fms.Domain.DbEntity\Fms.Domain.DbEntity.csproj", "{1A0A7E24-5476-47C1-B123-523327334F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fms.Domain.DbEntity", "Fms.Domain.DbEntity\Fms.Domain.DbEntity.csproj", "{1A0A7E24-5476-47C1-B123-523327334F1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fms.Application.Core", "Fms.Application.Core\Fms.Application.Core.csproj", "{2B9D1602-AB8F-4A8E-8038-432D2BEDCCFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fms.Application.Core", "Fms.Application.Core\Fms.Application.Core.csproj", "{2B9D1602-AB8F-4A8E-8038-432D2BEDCCFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fms.Persistance.Infrastructure", "Fms.Persistance.Infrastructure\Fms.Persistance.Infrastructure.csproj", "{6A2EB7B3-5263-4587-AB36-7AF394E3D73F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{B54D1911-8315-42CF-BAD1-EF641006F03F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fms.Persistance.Infrastructure", "Fms.Persistance.Infrastructure\Fms.Persistance.Infrastructure.csproj", "{6A2EB7B3-5263-4587-AB36-7AF394E3D73F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{440DE9DC-1FD5-4C65-8231-2B9EFD483FCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fms.Integrations.Operator", "Fms.Integrations.Operator\Fms.Integrations.Operator.csproj", "{2B88E175-6DE1-4E92-AC78-C71F3FF2B4BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47B55F71-6B58-474B-8555-6E681FE545D7}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +38,7 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6BA30F9D-1C47-49C2-BB02-8193E2008197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6BA30F9D-1C47-49C2-BB02-8193E2008197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA30F9D-1C47-49C2-BB02-8193E2008197}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{6BA30F9D-1C47-49C2-BB02-8193E2008197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BA30F9D-1C47-49C2-BB02-8193E2008197}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E1DB42FD-E6C9-44A6-BEF8-6DEFA333C017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -48,17 +57,23 @@ Global
 		{6A2EB7B3-5263-4587-AB36-7AF394E3D73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A2EB7B3-5263-4587-AB36-7AF394E3D73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A2EB7B3-5263-4587-AB36-7AF394E3D73F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B54D1911-8315-42CF-BAD1-EF641006F03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B54D1911-8315-42CF-BAD1-EF641006F03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B54D1911-8315-42CF-BAD1-EF641006F03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B54D1911-8315-42CF-BAD1-EF641006F03F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B88E175-6DE1-4E92-AC78-C71F3FF2B4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B88E175-6DE1-4E92-AC78-C71F3FF2B4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B88E175-6DE1-4E92-AC78-C71F3FF2B4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B88E175-6DE1-4E92-AC78-C71F3FF2B4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6BA30F9D-1C47-49C2-BB02-8193E2008197} = {7DE76D28-38EA-4E74-8426-8A915A63CE2B}
-		{2B9D1602-AB8F-4A8E-8038-432D2BEDCCFB} = {6C9FC34F-EB82-436F-8C0D-6CE2DBAB7EE5}
 		{E1DB42FD-E6C9-44A6-BEF8-6DEFA333C017} = {7DE76D28-38EA-4E74-8426-8A915A63CE2B}
 		{1A0A7E24-5476-47C1-B123-523327334F1C} = {D597D8B5-E682-459A-8E21-155810FDB119}
+		{2B9D1602-AB8F-4A8E-8038-432D2BEDCCFB} = {6C9FC34F-EB82-436F-8C0D-6CE2DBAB7EE5}
 		{6A2EB7B3-5263-4587-AB36-7AF394E3D73F} = {A73BEF42-D660-4727-A414-2BF012E1FADB}
-		{B54D1911-8315-42CF-BAD1-EF641006F03F} = {7DE76D28-38EA-4E74-8426-8A915A63CE2B}
+		{2B88E175-6DE1-4E92-AC78-C71F3FF2B4BA} = {7DE76D28-38EA-4E74-8426-8A915A63CE2B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD6367E1-C21B-41B8-BB5B-DC08E2222D1F}
 	EndGlobalSection
 EndGlobal

@@ -4,7 +4,7 @@ using System.Security.Claims;
 
 namespace Fms.Application.Core.Auth;
 
-public class Session : Domain.DbEntity.Auth.Interfaces.ISession
+public sealed class Session : Domain.DbEntity.Auth.Interfaces.ISession
 {
     public Guid Id { get; private init; }
 

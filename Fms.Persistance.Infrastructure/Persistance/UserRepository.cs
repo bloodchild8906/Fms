@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Fms.Domain.DbEntity.Entities;
+﻿using Fms.Domain.DbEntity.Entities;
 using Fms.Persistance.Infrastructure.Repository;
-using Microsoft.EntityFrameworkCore;
 
 namespace Fms.Persistance.Infrastructure.Persistance;
 

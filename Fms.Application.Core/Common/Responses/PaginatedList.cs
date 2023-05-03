@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Fms.Application.Core.Common.Responses;
 
-public record PaginatedList<T>
+public sealed record PaginatedList<T>
 {
     public int CurrentPage { get; init; }
     public int TotalPages { get; init; }

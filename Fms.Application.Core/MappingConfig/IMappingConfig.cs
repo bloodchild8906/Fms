@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace Fms.Application.Core.MappingConfig;
+﻿namespace Fms.Application.Core.MappingConfig;
 
 public interface IMappingConfig
 {

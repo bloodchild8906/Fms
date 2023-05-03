@@ -1,3 +1,4 @@
+using System;
 using Fms.Domain.DbEntity.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,33 +9,13 @@ public class RoleMap
 {
     public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Role> builder)
     {
-        builder.ToTable("Role", "dbo");
+             builder.HasMany<User>(user=>user.ReferencedUsers)
+                 .WithOne(user=>user.RoleDetail)
+                 .HasForeignKey(key=>key.RoleNavigator);
+             var role=new Role() { Name = "Admin", RoleId =new Guid("ec340194-c180-456e-b195-31147d29aa12"), PermissionMatrix = "", RoleGroup = null};
+             builder.HasData(role);
 
-        builder.HasKey(t => t.Id);
 
-        builder.Property(t => t.Id)
-            .IsRequired()
-            .HasColumnName("Id")
-            .HasColumnType("uniqueidentifier");
-
-        builder.Property(t => t.Name)
-            .IsRequired()
-            .HasColumnName("Name")
-            .HasColumnType("varchar(max)");
-
-        builder.Property(t => t.RoleGroup)
-            .HasColumnName("RoleGroup")
-            .HasColumnType("uniqueidentifier");
-
-        builder.Property(t => t.PermissionMatrix)
-            .IsRequired()
-            .HasColumnName("PermissionMatrix")
-            .HasColumnType("varchar(max)");
-
-        builder.HasOne(t => t.RoleGroup1)
-            .WithMany(t => t.Roles)
-            .HasForeignKey(d => d.RoleGroup)
-            .HasConstraintName("FK__Role__RoleGroup__60A75C0F");
     }
 
     public struct Table

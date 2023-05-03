@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<LangVersion>11</LangVersion>
+		<TieredPGO>true</TieredPGO>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<AssemblyName>Fms.Integrations.Api</AssemblyName>
+		<RootNamespace>Fms.Integrations.Api</RootNamespace>
+		<UserSecretsId>3c74f47a-589d-4066-9d3e-6d0c234087b8</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Remove="compilerconfig.json" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Ardalis.Result.AspNetCore" Version="7.0.0" />
+		<PackageReference Include="Ben.Demystifier" Version="0.4.1" />
+		<PackageReference Include="FastExpressionCompiler" Version="3.3.4" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+		<PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+		<PackageReference Include="OpenTelemetry" Version="1.4.0" />
+		<PackageReference Include="Pipoburgos.SharedKernel.Application" Version="7.0.5.2" />
+		<PackageReference Include="PushMate.FcmPushService" Version="1.0.1" />
+		<PackageReference Include="Serilog" Version="2.12.0" />
+		<PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+		<PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
+		<PackageReference Include="Serilog.Exceptions.EntityFrameworkCore" Version="8.4.0" />
+		<PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+		<PackageReference Include="Serilog.Sinks.SpectreConsole" Version="0.3.3" />
+		<PackageReference Include="SignalRSwaggerGen" Version="4.4.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+		<PackageReference Include="WebSocketManager" Version="1.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Fms.Application.Core\Fms.Application.Core.csproj" />
+		<ProjectReference Include="..\Fms.Domain.DbEntity\Fms.Domain.DbEntity.csproj" />
+		<ProjectReference Include="..\Fms.Persistance.Infrastructure\Fms.Persistance.Infrastructure.csproj" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<_ContentIncludedByDefault Remove="wwwroot\css\app.css" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\FONT-LICENSE" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.eot" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.otf" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.svg" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.ttf" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.woff" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\ICON-LICENSE" />
+		<_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\README.md" />
+		<_ContentIncludedByDefault Remove="wwwroot\auth.png" />
+		<_ContentIncludedByDefault Remove="wwwroot\fonts\specimen_files\grid_12-825-55-15.css" />
+		<_ContentIncludedByDefault Remove="wwwroot\fonts\specimen_files\specimen_stylesheet.css" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <None Include="..\.editorconfig" Link=".editorconfig" />
+	  <None Include="compilerconfig.json" />
+	</ItemGroup>
+
+</Project>

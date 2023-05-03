@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Fms.Application.Core.Common.Behaviors;
 
-public class ValidationResultPipelineBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> 
+public sealed class ValidationResultPipelineBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> 
     where TRequest : notnull
 {
     private readonly IServiceProvider _serviceProvider;

@@ -1,6 +1,6 @@
 ﻿namespace Fms.Application.Core.Common;
 
-public class TokenConfiguration
+public sealed class TokenConfiguration
 {
     public string Secret { get; init; } = null!;
     public string Issuer { get; init; } = null!;

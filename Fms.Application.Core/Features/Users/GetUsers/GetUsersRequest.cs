@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Fms.Application.Core.Features.Users.GetUsers;
 
-public record GetUsersRequest : PaginatedRequest, IRequest<PaginatedList<GetUserResponse>>
+public sealed record GetUsersRequest : PaginatedRequest, IRequest<PaginatedList<GetUserResponse>>
 {
     public string? Username { get; init; }
     public bool IsAdmin { get; init; }

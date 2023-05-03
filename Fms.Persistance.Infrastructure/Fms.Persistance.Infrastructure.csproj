@@ -18,12 +18,21 @@
     <ProjectReference Include="..\Fms.Application.Core\Fms.Application.Core.csproj" />
     <ProjectReference Include="..\Fms.Domain.DbEntity\Fms.Domain.DbEntity.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Migrations" />
-  </ItemGroup>
   <ItemGroup>
     <Generated Include="**\*.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Configuration\TicketMap.cs" />
+    <Compile Remove="Configuration\SkillsMap.cs" />
+    <Compile Remove="Configuration\RoleObjectMap.cs" />
+    <Compile Remove="Configuration\RoleGroupMap.cs" />
+    <Compile Remove="Configuration\GeneralDetailsMap.cs" />
+    <Compile Remove="Configuration\EmploymentDetailsMap.cs" />
+    <Compile Remove="Configuration\DocumentsMap.cs" />
+    <Compile Remove="Configuration\ContactDomainRolesMap.cs" />
+    <Compile Remove="Configuration\CheckListsMap.cs" />
+    <Compile Remove="Configuration\ActivityMap.cs" />
+    <Compile Remove="Configuration\ActivityLogMap.cs" />
   </ItemGroup>
   
 </Project>
